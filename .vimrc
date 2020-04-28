@@ -13,15 +13,22 @@ Plug 'airblade/vim-gitgutter'
 Plug 'ctrlpvim/ctrlp.vim' " fuzzy find files
 Plug 'scrooloose/nerdcommenter'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+Plug 'JamshedVesuna/vim-markdown-preview'
 
 Plug 'christoomey/vim-tmux-navigator'
-
+Plug 'tpope/vim-surround'
 Plug 'morhetz/gruvbox'
 
 Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
 Plug 'vim-python/python-syntax'
 Plug 'Chiel92/vim-autoformat'
-
+" LaTeX processor
+Plug 'lervag/vimtex'
+" Snippets plugins
+Plug 'honza/vim-snippets'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
 " Initialize plugin system
 call plug#end()
 
@@ -50,6 +57,7 @@ let g:NERDTreeGitStatusWithFlags = 1
 
 
 let g:NERDTreeIgnore = ['^node_modules$']
+
 
 " vim-prettier
 "let g:prettier#quickfix_enabled = 0
@@ -226,3 +234,8 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+
+" Markdown preview plugin configurations
+let vim_markdown_preview_toggle=1
+let vim_markdown_preview_browser='Google Chrome'
+let vim_markdown_preview_github=1
