@@ -1,6 +1,7 @@
 " Specify a directory for plugins
 set path+=**
 set background=dark
+set clipboard=unnamed
 call plug#begin('~/.vim/plugged')
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -29,6 +30,8 @@ Plug 'honza/vim-snippets'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'garbas/vim-snipmate'
+" Pywal color scheme
+Plug 'dylanaraps/wal.vim'
 " Initialize plugin system
 call plug#end()
 
@@ -85,7 +88,7 @@ set shiftwidth=2
 " always uses spaces instead of tab characters
 set expandtab
 
-colorscheme gruvbox
+colorscheme wal
 
 " sync open file with NERDTree
 " " Check if NERDTree is open or active
